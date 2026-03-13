@@ -8,7 +8,7 @@ export default function Friends({ friendPromise }) {
     <div className="card">
       <h3>Friends: {friends.length}</h3>
       {friends.map((friend) => (
-        <Friend friend={friend}></Friend>
+        <Friend key={friend.id} friend={friend}></Friend>
       ))}
     </div>
   );
